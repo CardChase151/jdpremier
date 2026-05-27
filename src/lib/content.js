@@ -85,6 +85,10 @@ export const VALUES = [
     title: 'Texas-grown.',
     body: 'Headquartered in Wills Point, TX. We know the lanes, we know the carriers, we know the road.',
   },
+  {
+    title: '24/7 dispatch.',
+    body: 'A real person on every call. Day or night, weekday or weekend — whenever your load matters.',
+  },
 ];
 
 // Story paragraphs for the About page (weaves Jacob's intake answers).

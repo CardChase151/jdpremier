@@ -33,28 +33,16 @@ function Hero() {
         </Reveal>
 
         <Reveal className="lg:col-span-6">
-          <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200">
-              <img
-                src={IMAGES.heroFlatbed}
-                srcSet={IMAGES.heroFlatbedSrcSet}
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                alt="JD Premier Logistics fleet — flatbed, dry van, refrigerated, heavy haul, and container freight"
-                loading="eager"
-                fetchpriority="high"
-                className="w-full h-[400px] lg:h-[520px] object-cover"
-              />
-            </div>
-            {/* Live · 24/7 Dispatch card. On mobile it sits BELOW the image
-                (was overlapping the truck collage and cutting in too much).
-                Desktop keeps the overlapping floating-card treatment. */}
-            <div className="mt-5 lg:mt-0 lg:absolute lg:-bottom-4 lg:-left-8 bg-white border border-slate-200 rounded-xl shadow-xl lg:shadow-2xl p-5 max-w-full lg:max-w-[260px]">
-              <div className="flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] text-brand-red font-black mb-1">
-                <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse" /> Live
-              </div>
-              <div className="font-display font-extrabold text-xl text-slate-900">24/7 Dispatch</div>
-              <div className="text-[13px] text-slate-600 mt-1">A real person on every call.</div>
-            </div>
+          <div className="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200">
+            <img
+              src={IMAGES.heroFlatbed}
+              srcSet={IMAGES.heroFlatbedSrcSet}
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              alt="JD Premier Logistics fleet — flatbed, dry van, refrigerated, heavy haul, and container freight"
+              loading="eager"
+              fetchpriority="high"
+              className="w-full h-[400px] lg:h-[520px] object-cover"
+            />
           </div>
         </Reveal>
       </div>
@@ -83,7 +71,7 @@ function Values() {
             Service first. <span className={ACCENT}>Always.</span>
           </h2>
         </Reveal>
-        <div className="grid md:grid-cols-3 gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {VALUES.map((v) => (
             <Reveal key={v.title} className={`${CARD} border rounded-xl p-7 hover:shadow-xl transition-shadow`}>
               <div className={`font-display font-extrabold text-xl mb-3 ${ACCENT}`}>{v.title}</div>
