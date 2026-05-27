@@ -45,7 +45,10 @@ function Hero() {
                 className="w-full h-[400px] lg:h-[520px] object-cover"
               />
             </div>
-            <div className="absolute -bottom-4 -left-4 lg:-left-8 bg-white border border-slate-200 rounded-xl shadow-2xl p-5 max-w-[260px]">
+            {/* Live · 24/7 Dispatch card. On mobile it sits BELOW the image
+                (was overlapping the truck collage and cutting in too much).
+                Desktop keeps the overlapping floating-card treatment. */}
+            <div className="mt-5 lg:mt-0 lg:absolute lg:-bottom-4 lg:-left-8 bg-white border border-slate-200 rounded-xl shadow-xl lg:shadow-2xl p-5 max-w-full lg:max-w-[260px]">
               <div className="flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] text-brand-red font-black mb-1">
                 <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse" /> Live
               </div>
