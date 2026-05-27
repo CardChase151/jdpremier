@@ -91,7 +91,7 @@ export const VALUES = [
 export const ABOUT_STORY = [
   'JD Premier Logistics was founded in 2026 to deliver freight solutions businesses can trust. We\'re led by professionals with over 10 years of freight and logistics experience — a young brokerage with industry-deep roots.',
   'Every customer gets a dispatcher who knows the load, knows the driver, and knows when the wheels are turning. We move full-truckload, hot-shot, drayage, cross-border, and specialized freight — and we treat every load like it has our name on it. Because it does.',
-  "We're not the biggest 3PL out there. We don't want to be. We're growing a brokerage built on trust, reliability, and performance — and we want to be the one your dispatcher trusts when the load matters.",
+  "We're not the biggest 3PL out there. We don't want to be. We're growing a brokerage built on trust, reliability, and performance — and we want to be the one you trust when the load matters.",
 ];
 
 // Stock photo URLs — Unsplash, free for commercial use.

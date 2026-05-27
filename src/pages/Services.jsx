@@ -1,10 +1,10 @@
-import { Wrench, Package, Snowflake, Truck, Maximize, Zap, CheckCircle2 } from 'lucide-react';
+import { Wrench, Package, Snowflake, Truck, Maximize, Zap, Anchor, Globe } from 'lucide-react';
 import PageHero from '../components/PageHero.jsx';
 import Reveal from '../components/Reveal.jsx';
 import { SERVICES } from '../lib/content.js';
-import { CARD, ACCENT, SECTION_BG, ICON_TILE } from '../lib/theme.js';
+import { CARD, SECTION_BG, ICON_TILE } from '../lib/theme.js';
 
-const ICON = { Wrench, Package, Snowflake, Truck, Maximize, Zap };
+const ICON = { Wrench, Package, Snowflake, Truck, Maximize, Zap, Anchor, Globe };
 
 export default function Services() {
   return (
@@ -26,14 +26,7 @@ export default function Services() {
                     <Icon size={26} strokeWidth={2.2} />
                   </div>
                   <div className="font-display font-extrabold text-2xl mb-3">{s.title}</div>
-                  <p className="text-[15px] leading-relaxed opacity-80 mb-5">{s.blurb}</p>
-                  <ul className="space-y-2 text-[13px] opacity-75">
-                    {['Insured & vetted carriers', 'Real-time tracking', '24/7 dispatch'].map(f => (
-                      <li key={f} className="flex items-center gap-2">
-                        <CheckCircle2 size={14} className={ACCENT} /> {f}
-                      </li>
-                    ))}
-                  </ul>
+                  <p className="text-[15px] leading-relaxed opacity-80">{s.blurb}</p>
                 </Reveal>
               );
             })}
