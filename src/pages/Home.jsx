@@ -6,12 +6,6 @@ import Reveal from '../components/Reveal.jsx';
 
 const ICON = { Wrench, Package, Snowflake, Truck, Maximize, Zap, Anchor, Globe };
 
-// Smaller image URLs for mobile (Unsplash supports w= query param).
-const heroSrcSet = (url) => {
-  const base = url.replace(/&?w=\d+/, '').replace(/&?q=\d+/, '');
-  return `${base}&w=900&q=70 900w, ${base}&w=1400&q=75 1400w, ${base}&w=2000&q=80 2000w`;
-};
-
 function Hero() {
   return (
     <section className="relative overflow-hidden bg-white text-slate-900">
@@ -42,11 +36,12 @@ function Hero() {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200">
               <img
-                src={IMAGES.heroFlatbed + '&w=1200&q=75'}
-                srcSet={heroSrcSet(IMAGES.heroFlatbed)}
+                src={IMAGES.heroFlatbed}
+                srcSet={IMAGES.heroFlatbedSrcSet}
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                alt=""
-                loading="lazy"
+                alt="JD Premier Logistics fleet — flatbed, dry van, refrigerated, heavy haul, and container freight"
+                loading="eager"
+                fetchpriority="high"
                 className="w-full h-[400px] lg:h-[520px] object-cover"
               />
             </div>

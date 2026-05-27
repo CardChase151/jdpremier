@@ -94,7 +94,8 @@ export const ABOUT_STORY = [
   "We're not the biggest 3PL out there. We don't want to be. We're growing a brokerage built on trust, reliability, and performance — and we want to be the one you trust when the load matters.",
 ];
 
-// Stock photo URLs — Unsplash, free for commercial use.
+// Hero image — local responsive JPEGs (truck-hero-{800,1200,1600}.jpg).
 export const IMAGES = {
-  heroFlatbed: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=2400&q=80',
+  heroFlatbed:        '/truck-hero-1200.jpg',
+  heroFlatbedSrcSet:  '/truck-hero-800.jpg 800w, /truck-hero-1200.jpg 1200w, /truck-hero-1600.jpg 1600w',
 };
