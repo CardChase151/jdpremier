@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>JD Premier Logistics · Site Content Questionnaire</title>
+<style>
+  @page { size: 8.5in 11in; margin: 0.55in 0.6in; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    color: #1a1a1a;
+    font-size: 11px;
+    line-height: 1.45;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* ─────────── HEADER (first page only) ─────────── */
+  .cover {
+    page-break-after: always;
+    height: 9.9in;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .brand-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-bottom: 14px;
+    border-bottom: 3px solid #D72027;
+  }
+  .brand-row img { height: 56px; width: auto; }
+  .brand-row .meta {
+    margin-left: auto;
+    text-align: right;
+    font-size: 10px;
+    color: #666;
+    line-height: 1.4;
+  }
+  .brand-row .meta strong { color: #0E2D70; }
+
+  .cover-mid { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 40px 0; }
+  .cover-eyebrow {
+    font-size: 10px;
+    color: #D72027;
+    font-weight: 800;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .cover-title {
+    font-size: 44px;
+    font-weight: 900;
+    color: #0E2D70;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    margin: 0 0 16px;
+  }
+  .cover-sub {
+    font-size: 14px;
+    color: #333;
+    max-width: 6in;
+    line-height: 1.55;
+  }
+  .cover-sub strong { color: #0E2D70; }
+
+  .cover-bottom {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 14px;
+    font-size: 10px;
+    color: #666;
+    display: flex;
+    justify-content: space-between;
+  }
+  .cover-bottom strong { color: #1a1a1a; }
+
+  /* ─────────── SECTIONS ─────────── */
+  .sec {
+    page-break-inside: avoid;
+    margin-bottom: 22px;
+  }
+  .sec-head {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 6px;
+  }
+  .sec-num {
+    background: #0E2D70;
+    color: #fff;
+    font-weight: 800;
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    min-width: 18px;
+    text-align: center;
+  }
+  .sec-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: #0E2D70;
+    letter-spacing: -0.01em;
+  }
+  .sec-blurb {
+    font-size: 10.5px;
+    color: #444;
+    margin: 4px 0 10px;
+    padding-left: 32px;
+  }
+  .sec-blurb em { color: #D72027; font-style: normal; font-weight: 700; }
+  .sec-body { padding-left: 32px; }
+
+  /* Form bits */
+  .line {
+    display: block;
+    border-bottom: 1px solid #b6bac4;
+    height: 24px;
+    margin: 6px 0;
+  }
+  .line.short { width: 60%; }
+  .line.tall { height: 38px; }
+  .lines-3 .line { margin-bottom: 4px; }
+
+  .check-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 4px 0;
+    font-size: 11px;
+  }
+  .box {
+    flex: 0 0 14px;
+    width: 14px;
+    height: 14px;
+    border: 1.5px solid #0E2D70;
+    border-radius: 3px;
+    margin-top: 1px;
+  }
+  .check-row .label { flex: 1; }
+  .check-row .write {
+    flex: 1;
+    border-bottom: 1px solid #c8ccd4;
+    margin-left: 4px;
+    padding-bottom: 1px;
+  }
+
+  .pair {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    align-items: end;
+    column-gap: 12px;
+    row-gap: 4px;
+    margin: 4px 0;
+  }
+  .pair .k {
+    font-size: 10.5px;
+    color: #555;
+    font-weight: 700;
+    padding-bottom: 4px;
+    border-bottom: 1px dotted transparent;
+  }
+  .pair .v {
+    border-bottom: 1px solid #b6bac4;
+    height: 22px;
+  }
+
+  .footer-tag {
+    margin-top: 24px;
+    padding-top: 14px;
+    border-top: 1px solid #e5e7eb;
+    font-size: 9.5px;
+    color: #777;
+    text-align: center;
+  }
+  .footer-tag .pill {
+    display: inline-block;
+    background: #f4f5f7;
+    color: #0E2D70;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-weight: 700;
+    margin: 0 4px;
+  }
+</style>
+</head>
+<body>
+
+<!-- ─────────── COVER PAGE ─────────── -->
+<div class="cover">
+  <div class="brand-row">
+    <img src="logo.png" alt="JD Premier Logistics" />
+    <div class="meta">
+      Site Content Questionnaire<br/>
+      <strong>Jacob Davis</strong> · JD Premier Logistics
+    </div>
+  </div>
+
+  <div class="cover-mid">
+    <div class="cover-eyebrow">— Let's build your site</div>
+    <h1 class="cover-title">10 short questions.<br/>Mostly check boxes.</h1>
+    <p class="cover-sub">
+      Most answers take a few seconds — <strong>circle, check, or jot</strong>. Three of them need a sentence or two. Fill it out however works (print + scribble, type in Preview, or just text the answers back).
+    </p>
+  </div>
+
+  <div class="cover-bottom">
+    <div>Prepared by <strong>Chase Kellis</strong> · App Catalyst</div>
+    <div>Return to: <strong>chase@appcatalyst.org</strong> · (714) 458-1163</div>
+  </div>
+</div>
+
+<!-- ─────────── 1 · TAGLINE ─────────── -->
+<div class="sec">
+  <div class="sec-head"><span class="sec-num">1</span><span class="sec-title">Tagline &amp; headline</span></div>
+  <div class="sec-blurb">Right now the homepage reads: <em>"Freight that moves. Service that delivers."</em></div>
+  <div class="sec-body">
+    <div class="check-row"><span class="box"></span><span class="label">Keep "Freight that moves. Service that delivers."</span></div>
+    <div class="check-row"><span class="box"></span><span class="label">Replace with this:</span><span class="write"></span></div>
+    <div style="margin-top: 10px; font-size: 10.5px; color: #555; font-weight: 700">Any tagline from ChatGPT (or that you say to customers all the time) you want included?</div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+</div>
+
+<!-- ─────────── 2 · STATS ─────────── -->
+<div class="sec">
+  <div class="sec-head"><span class="sec-num">2</span><span class="sec-title">Numbers to promote — pick 4</span></div>
+  <div class="sec-blurb">Stat strip on the homepage. Right now placeholders. Check 4 to feature; write your real number on the right.</div>
+  <div class="sec-body">
+    <div class="check-row"><span class="box"></span><span class="label" style="flex: 0 0 50%">States served</span><span class="write"></span></div>
+    <div class="check-row"><span class="box"></span><span class="label" style="flex: 0 0 50%">Years in business</span><span class="write"></span></div>
+    <div class="check-row"><span class="box"></span><span class="label" style="flex: 0 0 50%">Loads moved per month / per year</span><span class="write"></span></div>
+    <div class="check-row"><span class="box"></span><span class="label" style="flex: 0 0 50%">Trucks or carriers in network</span><span class="write"></span></div>
+    <div class="check-row"><span class="box"></span><span class="label" style="flex: 0 0 50%">On-time delivery %</span><span class="write"></span></div>
+    <div class="check-row"><span class="box"></span><span class="label" style="flex: 0 0 50%">24/7 dispatch</span><span class="write"></span></div>
+    <div class="check-row"><span class="box"></span><span class="label" style="flex: 0 0 50%">Repeat-customer rate</span><span class="write"></span></div>
+    <div class="check-row"><span class="box"></span><span class="label" style="flex: 0 0 50%">Average quote response time</span><span class="write"></span></div>
+    <div class="check-row"><span class="box"></span><span class="label" style="flex: 0 0 50%">Other:</span><span class="write"></span></div>
+  </div>
+</div>
+
+<!-- ─────────── 3 · SERVICES ─────────── -->
+<div class="sec">
+  <div class="sec-head"><span class="sec-num">3</span><span class="sec-title">Services offered</span></div>
+  <div class="sec-blurb">Current list: <em>Flatbed · Dry Van · Refrigerated · Heavy Haul · Oversize · Hot Shot / Box Truck</em></div>
+  <div class="sec-body">
+    <div style="font-size: 10.5px; color: #555; font-weight: 700; margin-bottom: 4px">Add to the list:</div>
+    <div class="check-row"><span class="box"></span><span class="label">Drayage / port</span></div>
+    <div class="check-row"><span class="box"></span><span class="label">Intermodal (rail)</span></div>
+    <div class="check-row"><span class="box"></span><span class="label">Cross-border (US ↔ MX / CA)</span></div>
+    <div class="check-row"><span class="box"></span><span class="label">Final mile</span></div>
+    <div class="check-row"><span class="box"></span><span class="label">Hazmat</span></div>
+    <div class="check-row"><span class="box"></span><span class="label">Auto / power-only</span></div>
+    <div class="check-row"><span class="box"></span><span class="label">Other:</span><span class="write"></span></div>
+    <div style="font-size: 10.5px; color: #555; font-weight: 700; margin: 10px 0 4px">Remove from the list (anything you don't actually do):</div>
+    <div class="line"></div>
+  </div>
+</div>
+
+<!-- ─────────── 4 · VALUES ─────────── -->
+<div class="sec">
+  <div class="sec-head"><span class="sec-num">4</span><span class="sec-title">What we believe</span></div>
+  <div class="sec-blurb">3 cards on the homepage. Right now: <em>Service first · Built on trust · Texas-grown</em></div>
+  <div class="sec-body">
+    <div class="check-row"><span class="box"></span><span class="label">Keep those three as-is</span></div>
+    <div style="font-size: 10.5px; color: #555; font-weight: 700; margin: 10px 0 4px">Or write your 3 (one short phrase each — what you actually tell customers):</div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+</div>
+
+<!-- ─────────── 5 · STORY ─────────── -->
+<div class="sec">
+  <div class="sec-head"><span class="sec-num">5</span><span class="sec-title">Your real story (About page)</span></div>
+  <div class="sec-blurb">The About page right now has placeholder backstory. Give me a couple sentences on each:</div>
+  <div class="sec-body">
+    <div class="pair"><span class="k">Founded</span><span class="v"></span></div>
+    <div class="pair"><span class="k">Why started</span><span class="v"></span></div>
+    <div class="pair"><span class="k"></span><span class="v"></span></div>
+    <div class="pair"><span class="k">Who's behind it</span><span class="v"></span></div>
+    <div class="pair"><span class="k">Proud milestone</span><span class="v"></span></div>
+    <div class="pair"><span class="k">Anything else?</span><span class="v"></span></div>
+    <div class="pair"><span class="k"></span><span class="v"></span></div>
+  </div>
+</div>
+
+<!-- ─────────── 6 · CONTACT INFO ─────────── -->
+<div class="sec">
+  <div class="sec-head"><span class="sec-num">6</span><span class="sec-title">Real contact info</span></div>
+  <div class="sec-blurb">What goes on the contact page + footer.</div>
+  <div class="sec-body">
+    <div class="pair"><span class="k">Dispatch phone</span><span class="v"></span></div>
+    <div class="pair"><span class="k">Inbound email</span><span class="v"></span></div>
+    <div class="pair"><span class="k">Address</span><span class="v"></span></div>
+    <div class="pair"><span class="k">Hours</span><span class="v"></span></div>
+    <div class="pair"><span class="k">Instagram</span><span class="v"></span></div>
+    <div class="pair"><span class="k">Facebook</span><span class="v"></span></div>
+    <div class="pair"><span class="k">LinkedIn</span><span class="v"></span></div>
+    <div class="pair"><span class="k">Other</span><span class="v"></span></div>
+  </div>
+</div>
+
+<!-- ─────────── 7 · QUOTE DESTINATION ─────────── -->
+<div class="sec">
+  <div class="sec-head"><span class="sec-num">7</span><span class="sec-title">When someone requests a quote — where does it go?</span></div>
+  <div class="sec-blurb">Right now the form pretends to send. Pick the real destination(s):</div>
+  <div class="sec-body">
+    <div class="check-row"><span class="box"></span><span class="label" style="flex: 0 0 40%">Email to:</span><span class="write"></span></div>
+    <div class="check-row"><span class="box"></span><span class="label" style="flex: 0 0 40%">CC / BCC also to:</span><span class="write"></span></div>
+    <div class="check-row"><span class="box"></span><span class="label" style="flex: 0 0 40%">Text/SMS notification to:</span><span class="write"></span></div>
+    <div class="check-row"><span class="box"></span><span class="label" style="flex: 0 0 40%">Save to Google Sheet</span></div>
+    <div class="check-row"><span class="box"></span><span class="label" style="flex: 0 0 40%">Push into CRM:</span><span class="write"></span></div>
+  </div>
+</div>
+
+<!-- ─────────── 8 · PHOTOS ─────────── -->
+<div class="sec">
+  <div class="sec-head"><span class="sec-num">8</span><span class="sec-title">Photography</span></div>
+  <div class="sec-blurb">Right now using stock truck photos. Do you have your own to use?</div>
+  <div class="sec-body">
+    <div class="check-row"><span class="box"></span><span class="label">Yes — I'll send photos of our trucks / fleet / team</span></div>
+    <div class="check-row"><span class="box"></span><span class="label">Use the stock photos for now</span></div>
+    <div class="check-row"><span class="box"></span><span class="label">Other:</span><span class="write"></span></div>
+  </div>
+</div>
+
+<!-- ─────────── 9 · OPTIONAL PAGES ─────────── -->
+<div class="sec">
+  <div class="sec-head"><span class="sec-num">9</span><span class="sec-title">Anything missing? — optional add-ons</span></div>
+  <div class="sec-blurb">Check what you want me to add (each adds time, but they're all valuable):</div>
+  <div class="sec-body">
+    <div class="check-row"><span class="box"></span><span class="label">Carrier portal (for drivers / partners to access loads)</span></div>
+    <div class="check-row"><span class="box"></span><span class="label">Shipper portal (for customers to track shipments)</span></div>
+    <div class="check-row"><span class="box"></span><span class="label">Industries served (manufacturing, retail, ag, oil &amp; gas, etc.)</span></div>
+    <div class="check-row"><span class="box"></span><span class="label">Customer testimonials / shipper logos</span></div>
+    <div class="check-row"><span class="box"></span><span class="label">Service area map</span></div>
+    <div class="check-row"><span class="box"></span><span class="label">Careers / "Drive for us" page (recruit drivers)</span></div>
+    <div class="check-row"><span class="box"></span><span class="label">News / blog</span></div>
+    <div class="check-row"><span class="box"></span><span class="label">Other:</span><span class="write"></span></div>
+  </div>
+</div>
+
+<!-- ─────────── 10 · PRIMARY CTA ─────────── -->
+<div class="sec">
+  <div class="sec-head"><span class="sec-num">10</span><span class="sec-title">What action matters most?</span></div>
+  <div class="sec-blurb">Every page has buttons. Right now: <em>Request a Quote</em> (primary) and <em>Call Dispatch</em> (secondary). Pick what's most important for growing your business:</div>
+  <div class="sec-body">
+    <div class="check-row"><span class="box"></span><span class="label">Get quote requests (current default)</span></div>
+    <div class="check-row"><span class="box"></span><span class="label">Get calls — make "Call Dispatch" the big button</span></div>
+    <div class="check-row"><span class="box"></span><span class="label">Recruit carriers — add a "Become a Carrier" button</span></div>
+    <div class="check-row"><span class="box"></span><span class="label">Recruit drivers — add a "Drive for us" button</span></div>
+    <div class="check-row"><span class="box"></span><span class="label">Other:</span><span class="write"></span></div>
+  </div>
+</div>
+
+<div class="footer-tag">
+  <span class="pill">JD Premier Logistics</span> ·
+  <span class="pill">Wills Point, TX</span> ·
+  Return to <strong>chase@appcatalyst.org</strong> · (714) 458-1163
+</div>
+
+</body>
+</html>
